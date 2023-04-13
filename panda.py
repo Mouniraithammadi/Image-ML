@@ -14,4 +14,8 @@ df = pd.DataFrame(
         ]
     }
 )
+def getId():
+    return df.id
+def getDf():
+    return df
 print(df.id)
