@@ -39,20 +39,9 @@ def get(Vector):
     res = index.query(queries=[vector],top_k=1)
     return res
 
-# df = pd.DataFrame(
-#     data={
-#         "id":["a","b","c","d"],
-#         "vector":[
-#             [1,2,3],
-#             [4,5,6],
-#             [7,8,9],
-#             [10,11,22]
-#         ]
-#     }
-# )
-# print(put(["a","b","c","d"],[[1,2,3], [4,5,6],  [7,8,9],  [10,11,22] ]))
 
-# pinecone.delete_index("mounirindex")
+
+# pinecone.delete_index("index")
 # query_vector = [0, 2, 3]
 # results = get(query_vector)
 # print(results)
