@@ -1,38 +1,4 @@
-# import os
-# import requests
-# from bs4 import BeautifulSoup
-#
-# # The URL of the website to scrape
-# url = "https://www.iconfinder.com/search?q=emoji&price=free&style=flat"
-#
-# # The folder to store the downloaded images
-# folder = "images"
-#
-# # Create the folder if it doesn't exist
-# if not os.path.exists(folder):
-#     os.makedirs(folder)
-#
-# # Send a request to the website and parse the HTML content
-# response = requests.get(url)
-# soup = BeautifulSoup(response.content, "html.parser")
-#
-# # Find all <img> tags in the HTML content
-# img_tags = soup.find_all("img")
-# i = 0
-# # Download each image and save it to the folder
-# for img_tag in img_tags:
-#     # Get the URL of the image
-#     img_url = img_tag["src"]
-#     if img_url.endswith(".png"):
-#         # Send a request to download the image
-#         response = requests.get(img_url)
-#
-#         # Save the image to a file in the folder
-#         filename = os.path.join(folder, os.path.basename(img_url))
-#         with open(filename, "wb") as f:
-#             f.write(response.content)
-#             print(i)
-#             i+=1
+
 import os
 import time
 
